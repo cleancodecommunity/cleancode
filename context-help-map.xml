@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="community" path="pages/community.html"/>
+   <appContext helpID="events" path="pages/events.html"/>
+   <appContext helpID="code_smell" path="pages/code_smell.html"/>
+   <appContext helpID="academia" path="pages/academia.html"/>
+   <appContext helpID="aboutus" path="pages/aboutus.html"/>
+</map>

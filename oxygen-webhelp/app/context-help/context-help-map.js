@@ -1,0 +1,1 @@
+define(function() { return [{"appname":"", "appid":"community", "path":"pages/community.html"},{"appname":"", "appid":"events", "path":"pages/events.html"},{"appname":"", "appid":"code_smell", "path":"pages/code_smell.html"},{"appname":"", "appid":"academia", "path":"pages/academia.html"},{"appname":"", "appid":"aboutus", "path":"pages/aboutus.html"}]});

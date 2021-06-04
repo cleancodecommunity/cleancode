@@ -1,0 +1,3 @@
+define(function () {
+return ["pages/aboutus.html@@@About Us@@@Who is Clean Code Community?...","pages/academia.html@@@Academic and Industrial Collaboration@@@MTU and LERO...","pages/code_smell.html@@@What is Clean Code and Code Smell@@@Clean Code and Code Smell...","pages/community.html@@@What is Clean Code Community?@@@A community to learn and share ideas on Clean Code programming...","pages/event_1.html@@@Events@@@Clean Code Community Events...","pages/events.html@@@Events@@@Clean Code Community Events..."];
+});

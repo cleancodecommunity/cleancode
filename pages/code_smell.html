@@ -1,0 +1,166 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="22.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2021" /><meta name="DC.rights.owner" content="(C) Copyright 2021" /><meta name="DC.type" content="concept" /><meta name="description" content="Clean Code and Code Smell" /><meta name="DC.format" content="HTML5" /><meta name="DC.identifier" content="code_smell" />        
+      <title>What is Clean Code and Code Smell</title><!--  Generated with Oxygen version 22.1, build number 2020072823.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="code_smell-d61e37" /><meta name="wh-source-relpath" content="pages/code_smell.dita" /><meta name="wh-out-relpath" content="pages/code_smell.html" />
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2020072823" />
+    
+    
+    <script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/ashes.css?buildId=2020072823" /></head>
+
+    <body id="code_smell" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="22.1">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">  <img class="image" src="images/header.png" />  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul xmlns:xhtml="http://www.w3.org/1999/xhtml" role="menubar" aria-label="Menu"><li role="menuitem"><span id="community-d61e13-mi" data-tocid="community-d61e13" data-state="leaf" class=" topicref " data-id="community"><span class="title"><a href="../pages/community.html">What is Clean Code Community?</a></span></span></li><li role="menuitem"><span id="events-d61e25-mi" data-tocid="events-d61e25" data-state="leaf" class=" topicref " data-id="events"><span class="title"><a href="../pages/events.html">Events</a></span></span></li><li role="menuitem"><span id="code_smell-d61e37-mi" data-tocid="code_smell-d61e37" data-state="leaf" class=" topicref " data-id="code_smell"><span class="title"><a href="../pages/code_smell.html">What is Clean Code and Code Smell</a></span></span></li><li role="menuitem"><span id="academia-d61e49-mi" data-tocid="academia-d61e49" data-state="leaf" class=" topicref " data-id="academia"><span class="title"><a href="../pages/academia.html">Academic and Industrial Collaboration</a></span></span></li><li role="menuitem"><span id="aboutus-d61e62-mi" data-tocid="aboutus-d61e62" data-state="leaf" class=" topicref " data-id="aboutus"><span class="title"><a href="../pages/aboutus.html">About Us</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div></form></div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li class="active"><span class="topicref" data-id="code_smell"><span class="title"><a href="../pages/code_smell.html">What is Clean Code and Code Smell</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Clean Code and Code Smell</p></span></span></span></li></ol></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div class="col-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">What is Clean Code and Code Smell</h1>
+    
+    <div class="- topic/body concept/conbody body conbody"><p class="- topic/shortdesc shortdesc">Clean Code and Code Smell</p>
+        <section class="- topic/section section">
+           
+        <p class="- topic/p p">
+           
+            Every digital machine (including our PCs and mobile phones) is run by software made of some codes. 
+           
+            The functionality of these machines is defined in the Source-Code of the software, therefore, the main expectation from a software system is <strong class="+ topic/ph hi-d/b ph b">to work as expected</strong>. This expectation is what developers and customers care about the most.
+            Like any other product, software has quality features and not all those features are revealed and realised easily when the software is launched. 
+            The lack of quality features in the software system has negative impact on the performance and maintenance cost in long term. 
+            
+        </p>
+            <p class="- topic/p p">
+            The term  <strong class="+ topic/ph hi-d/b ph b">Clean Code</strong> was born in line with producing software systems (source-code) with quality features.
+            In contrast to <strong class="+ topic/ph hi-d/b ph b">Clean Code</strong>, the term  <strong class="+ topic/ph hi-d/b ph b">Code Smell</strong> was invented to indicate the lack of quality features or flaws in the source code. 
+            
+            As the author of <strong class="+ topic/ph hi-d/b ph b">Clean Code</strong> book has stated, "Even bad code can function. But if code is not clean, it can bring a development organization to its knees". Therefore, a clean code or a smelly code, has nothing to do directly with software functioning. The impacts of code smell are revealed in the longer term. 
+            </p>
+        <p class="- topic/p p">
+            The main impact of the code smell existence may be observed during the course of software maintenance. Software maintenance is an umbrella term that includes many different activities such as code debugging, code refactoring (code migration), update and code search.
+            All these functionalities suffer from the existence of code smell. 
+            On average 75% of the TCO (Total Cost of Ownership) is spent on maintaining the software system. Therefore the existence of code smell has significant financial impact as well. 
+            
+            Clean code has impact on the energy consumption. Two software systems that perform the exact same functionality with different source code design might have different energy consumption. This difference in energy consumption is mostly due to the existence of code smell. The energy consumption is usually referred to the amount of electricity energy that is consumed by the machine (CPU usage, memory RAM and etc).  
+        </p>
+        <p class="- topic/p p">
+            Let's see what constitutes code smell.
+            One of the coding practices that can lead to a code smell is the naming convention. Different functions and code artefacts in the software system have names. The common sense practice is to pick meaningful names for each artefact according to their functionalities and roles. 
+            This would potentially help make the process of source code debugging easier. The other example of code smell is to create too much of a dependency among source code artefacts. These dependencies would create a spider net where touching and updating one aspect would have an impact on many other aspects. 
+            Object oriented programming languages are the solution to this type of code smell only if they are properly applied. The other example would be the use of an inappropriate data structure to keep the data. The use of inappropriate data structure would potentially increase the running time of multiple tasks such as adding a new element, traversing and searching for an element, deleting an element and etc. 
+            
+            Adding comments in the source code is a good habit that most developers have, however, there are good and bad practices in adding comments in the source code. Comments should always be related to the source code and provide information on the functionality of the source code and/or how the source code artefacts were crafted. This type of information would help new developers to understand the code for further development. Any other irrelevant types of comments would 1) increase the size of the source code unreasonably large and 2) might potentially mislead the new developers. 
+            Comments that are too obvious or too complicated are considered code smell. Commented code (these days we have control version systems so no need to keep the old version of the code as comment) is also considered as code smell. 
+        </p>
+        <p class="- topic/p p">
+            There are several other types of code smell. Some of which are specific to different programming languages. Therefore, clean code is a multidimensional measure. To start we need to know and get familiar with code smells and analyse the system to detect their existence if there is any.
+            
+            The main goal of the Clean Code Community is to highlight the importance of code smell free software system and bring together with different discussions around different code smells.
+            
+        </p>
+            
+        </section>
+        
+       
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="22.1">
+  <div class=" footer-container mx-auto ">
+    Copy Right by CCC   ***
+clean.code.community@gmail.com ***
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>
